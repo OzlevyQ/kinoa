@@ -1,0 +1,154 @@
+/* סגנון כללי */
+.App {
+  text-align: center;
+}
+
+body {
+  direction: rtl;
+}
+
+.logos {
+  max-width: 15%;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+
+/* עיצוב הכותרת */
+.App-header {
+  background-color: #f2ecd3;
+}
+
+/* עיצוב גוף העמוד */
+.App-body {
+  display: flex;
+  flex-direction: column; /* stack the nav and content on top of each other */
+}
+
+.App-nav {
+  width: 100%; /* make the nav take the full width */
+  border-bottom: 1px solid #ddd; /* adjust border style */
+  padding: 20px;
+  direction: rtl;
+}
+
+.App-content {
+  padding: 20px;
+}
+
+
+.App-nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.App-nav li {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #1DA1F2;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.App-nav li:hover {
+  background-color: #0c8edc;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.App-nav li:active {
+  background-color: #0a7ac2;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* תוכן העמוד */
+
+/* עיצוב תמונות */
+.episode-image img,
+img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* עיצוב פרטי פרק */
+.episode-details {
+  text-align: left;
+}
+
+/* עיצוב טקסט */
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* עיצוב נגן אודיו */
+audio {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Flex Container */
+.flex-container {
+  display: flex;
+}
+
+/* עיצוב קרטיס (Card) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-top: 25px;
+}
+
+/* עיצוב עליון לניווט */
+.upNav {
+  background-color: #f2ecd3;
+  text-align: left;
+  max-width: 100%;
+}
+
+
+   
+  
+  @media (max-width: 796px) {
+      /* עיצוב .logos רספונסיבי */
+      .logos {
+        max-width: 100%;
+        height: auto;
+      }
+      
+    .App-nav {
+      min-width: 100%; /* full width on small screens */
+      padding: 10px; /* less padding on smaller screens */
+    }
+  
+    .App-nav li {
+      display: block; /* stack the menu items */
+      margin-bottom: 10px; /* less space between items */
+    }
+  
+    .App-content {
+      padding: 10px; /* less padding on smaller screens */
+    }
+  }
+  
+
+  /* עיצוב .card רספונסיבי */
+    .card {
+      margin: 10px;
+      padding: 10px;
+    }
